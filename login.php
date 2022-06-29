@@ -2,18 +2,30 @@
 <html>
 <head>
 	<title>Login</title>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<link rel = "stylesheet" href = "Assignment.css">	
 	</head>
 <body>
-	<div class="container">
-		<h1>Login</h1>
-<form method="POST" action="login.php">
-Email:<br><input type="text" name="email" id="email"/>
-<br>
-Password:<br><input type="password" name="password" id="password"/>
-<br>
-<input type="submit" name="submit" value="Login"/>
-</form>
-
+	<div class="row justify-content-center">
+		<div class ="container">
+		<h1>Login</h1> 
+		<form method="POST" action="login.php">
+		<div class="form-group">
+		<label> Email</label>
+		<input type="text" name="email" class = "form-control" id="email" value="enter your name"/>
+		</div>
+		<div class="form-group">
+		<label>Password</label>
+		<br>
+		<input type="password" name="password" class = "form-control" id="password" value="enter your password"/>
+		</div>
+		<div class="form-group">
+		<button type="submit" class="btn btn-primary" name="submit" value="Login">Login</button>
+		</div>
+		</form>
 <?php 
 include 'connect.php';
 if (isset($_POST['submit'])){
@@ -58,6 +70,7 @@ $stmt->close();
 $mysqli->close();
 	}
 ?>
+</div>
 </div>
 </body>
 </html>

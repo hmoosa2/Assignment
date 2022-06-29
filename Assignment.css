@@ -1,0 +1,35 @@
+.button
+{
+background-color: #4CAF50;
+}
+
+h1
+{
+	color: white;
+	text-align: center;
+	padding: 15px 32px;
+	display: inline-block;
+	font-size: 24px;
+	margin: 4px 2px;
+	font-family: Helivetica;
+}
+
+
+body
+{
+		background-color: #DAD7A7;
+}
+
+.button
+{
+background-color: #45A29EL;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;	
+}
