@@ -64,7 +64,6 @@ else {
         <input type="text" name="pass" class = "form-control" id="pass">
    </div>
    Admin: <br><input type = "checkbox" id="admin" name="admin" value = "1"/></br>
-   <input type="submit" id="submit" name="submit" value="submit"/>
    <div class="form-group">
 		<button type="submit" class="btn btn-primary" name="submit" id="submit" value="submit">Submit</button>
 	</div>
